@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/jazzopaul/stock-tracker/alpha_vantage"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+
+	alphaVantageSvc := alpha_vantage.NewService()
+	alphaVantageSvc.ApiCall()
 }
